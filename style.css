@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: blue;
+    color: black;
+}
+
+header {
+    background: black;
+    padding: 20px 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+    color: cyan;
+
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.hero-content {
+    max-width: 10000px;
+}
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.hero-button {
+    display: flex;
+    gap: 15px;
+}
+.contact-btn,.works-btn {
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.contact-btn {
+    background: white;
+    color: black;
+    transition: background 0.3s;
+}
+.contact-btn:hover{
+    background: black;
+    color: white;
+}
+.works-btn {
+    background: white;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+.works-btn:hover {
+    background: black;
+    color: white;
+}
+.hero-image img {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px blue;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin-top: 20px;
+        width: 350px;
+    }
+}
