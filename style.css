@@ -117,3 +117,39 @@ nav ul li a.active {
         width: 350px;
     }
 }
+
+.about {
+    text-align: center;
+    padding: 50px;
+}
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;	
+    align-items: center;
+    padding: 50px;
+    justify-content: center;
+}
+.about-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px blue;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
