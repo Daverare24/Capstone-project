@@ -213,3 +213,41 @@ nav ul li a.active {
     background-color: blue;
     
 }
+
+/*Project Section*/
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;	
+    align-items: center;
+    padding: 60px 50px;
+    justify-content: center;
+}
+.about-container > section {
+    width: 280px;
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease; 
+    box-shadow: 0 0 10px blue;
+}
+.about-container > section:hover {
+    transform: translateY(-5px);
+}
+
+.emoji-project {
+    font-size: 50px;
+    margin-bottom: 10px;
+
+}
+.about-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: blue;
+}
+.about-container p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+}
